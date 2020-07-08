@@ -11,29 +11,12 @@ services:
         - MYSQL_USER=codetest
         - MYSQL_PASSWORD=swordfish
     ports:
-      - "3306:3306"
+      - "13306:3306"
     restart: always
 
-  example-node:
-    image: example-node
-    build: images/example-node
+  solution :
+    image: solution
+    build: images/solution
     volumes:
       - ./data:/data
 
-  example-python:
-    image: example-python
-    build: images/example-python
-    volumes:
-      - ./data:/data
-
-  example-r:
-    image: example-r
-    build: images/example-r
-    volumes:
-      - ./data:/data
-
-  example-ruby:
-    image: example-ruby
-    build: images/example-ruby
-    volumes:
-      - ./data:/data
