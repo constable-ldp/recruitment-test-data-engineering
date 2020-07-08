@@ -1,0 +1,6 @@
+mysqlclient ~= 1.4
+SQLAlchemy ~= 1.3
+pandas
+numpy
+pymysql
+mysql.connector
